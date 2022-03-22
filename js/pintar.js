@@ -9,19 +9,22 @@ export function pintarCanciones(resultado){
         tarjeta.classList.add("h-100")
         tarjeta.classList.add("text-center")
         tarjeta.classList.add("mb-3")
+        tarjeta.classList.add("border-dark")
+        
 
         let imagen=document.createElement("img")
         imagen.classList.add("card-img-top")
-        imagen.classList.add("p-3")
+        imagen.classList.add("p-5")
         imagen.classList.add("h-100")
         imagen.src=cancion.album.images[0].url
 
         let nombreCancion=document.createElement("h4")
+       // nombreCancion.classList.add("text-white")
         nombreCancion.textContent=cancion.name
 
         let preview_url=document.createElement("audio")
         preview_url.src=cancion.preview_url
-        preview_url.setAttribute("controls","controls","h-100")
+        preview_url.setAttribute("controls","controls")
 
         let boton=document.getElementById("")
         boton
