@@ -10,7 +10,6 @@ export function pintarCanciones(resultado){
         tarjeta.classList.add("text-center")
         tarjeta.classList.add("mb-3")
         tarjeta.classList.add("border-dark")
-        
 
         let imagen=document.createElement("img")
         imagen.classList.add("card-img-top")
@@ -34,11 +33,6 @@ export function pintarCanciones(resultado){
         tarjeta.appendChild(preview_url)
         columna.appendChild(tarjeta)
         fila.appendChild(columna)
-
         
-
-        console.log(cancion.name)
-        console.log(cancion.preview_url)
-        console.log(cancion.album.images[0].url)
     });
 }
